@@ -87,4 +87,4 @@ class DiscreteSlider extends StreamlitComponentBase<State> {
 // passing arguments from Python -> Component.
 //
 // You don't need to edit withStreamlitConnection (but you're welcome to!).
-export default withStreamlitConnection(MyComponent)
+export default withStreamlitConnection(DiscreteSlider)
