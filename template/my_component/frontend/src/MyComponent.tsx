@@ -21,6 +21,7 @@ class MyComponent extends StreamlitComponentBase<State> {
     // Arguments that are passed to the plugin in Python are accessible
     // via `this.props.args`. Here, we access the "name" arg.
     const name = this.props.args["name"]
+    const greetings = this.props.args["greetings"]
 
     // Streamlit sends us a theme object via props that we can use to ensure
     // that our component has visuals that match the active theme in a
@@ -46,7 +47,7 @@ class MyComponent extends StreamlitComponentBase<State> {
     // be available to the Python program.
     return (
       <span>
-        Hello, {name}! &nbsp;
+        {greetings}, {name}! &nbsp;
         <button
           style={style}
           onClick={this.onClicked}
